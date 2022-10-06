@@ -1,0 +1,530 @@
+* {padding: 0; margin: 0;}
+
+
+.container {width: 100%; margin: auto; height: 3000px;}
+/*kalo rusak width nya 1519.9*/
+header {
+	background: white;
+	height: 60px;
+	line-height: 60px;
+	top: 0px;
+	width: 100%;
+	position: fixed;
+	z-index: +1;
+	-webkit-box-shadow : 0px 1px 10px #808080;
+}
+
+header .Logo img {
+	height: 60px;
+	line-height: 60px;
+	float: left;
+	margin : -6px 0 0 5px;
+}
+
+header .Page menu {
+	float: left;
+	border-left: 1px solid #2f3542;
+	margin: 15px 0 2px 15px;
+	line-height: 20px;
+	height: 20px;
+}
+
+header .Page menu ul li {
+	float: left;
+	list-style: none;
+}
+
+header .Page menu ul li a {
+	color : #2f3542;
+	text-decoration: none;
+	margin: 0 0 0 25px;
+	padding: 0 0 0 5px;
+	transition: 1s;
+	font-family: "Rubik" , sans-serif;
+}
+
+header .Page menu ul li a:hover {
+	color: #90CCB8;
+}
+
+header .Page menu ul li ul {
+	opacity: 0;
+	position: absolute;
+	margin-left: 27.5px;
+	transition: all 0.2s ease-out;
+}
+
+header .Page menu ul li:hover >  ul {
+	opacity: 1;
+	margin-top: 10px;
+	background: white;
+}
+
+header .Page menu ul li ul li {
+	float : none;
+	position: relative;
+	margin : 20px;
+	padding: 10px 5px 6px 15px;
+}
+
+
+header .Page menu ul li ul li a {
+	margin-left: 0px;
+	font-family: "Rubik" , sans-serif;
+}
+
+header .Page menu ul li ul li a:hover {
+	color: #2f3542 ;
+}
+
+header .Page menu ul ul ul {
+	left : 100%;
+	width: 200px;
+}
+
+header .ContactNum {
+	float: right;
+	margin: 0 400px 0 0;
+}
+
+header .ContactNum img {
+	width: auto;
+	height: 35px;
+	float: left;
+	margin-top: 12px;
+}
+
+header .ContactNum p {
+	font-family: "Rubik" , sans-serif;
+	float : right;
+	color: #2f3542;
+}
+
+header .SosMed {
+	float: right;
+	margin: 17px -500px 0 0;
+	border-left: 1px solid #D9D9D9;
+	padding-left: 30px;
+}
+
+header .SosMed img {
+	float: right;
+	width: auto;
+	height: 20px;
+	margin-right: 50px;
+}
+
+header .SosMed img:hover {
+	filter: invert(61%) sepia(10%) saturate(1134%) hue-rotate(323deg) brightness(87%) contrast(85%);
+}
+
+header .Search {
+	float: right;
+	background: #c5654c;
+	padding: 20px 20px;
+	margin: 0 -544px 0 0;
+}
+
+header .Search img {
+	float: right;
+	height: 20px;
+	float: left;
+	opacity: 0.5;
+}
+
+
+article .Slides {
+	width: 100%;
+	height: 700px;
+	position: relative;
+}
+
+article .Slides img{
+	width: 100%;
+	height: 700px;
+	float: left;
+	z-index: -1;
+	position: relative;
+	object-fit: cover;
+}
+
+article .Slides .Photo {
+	position: absolute;
+	color: white;
+	top: 0;
+	width: 100%;
+	height: 700px;
+	text-decoration: none;
+	text-align: center;
+} 
+
+article .Slides .Photo h1 {
+	position: relative;
+	color: white;
+	font-weight: lighter;
+	font-family: "Brush Script MT" ,cursive;
+	font-size: 150px;
+	margin-top: 150px;
+}
+
+article .Slides .Photo h6{
+	position: relative;
+	color: white;
+	font-family: sans-serif;
+	font-size: 17px;
+	font-weight: lighter;
+	letter-spacing: 5px;
+	margin-top: 10px;
+	margin-bottom: 70px;
+}
+
+article .Content {
+	width: 100%;
+	height: 1350px;
+	float: left;
+	background-color: #f5f6fa;
+	display: block;
+	position: relative;
+}
+
+article .Content iframe{
+	width: 1000px;
+	height : 500px;
+	position: absolute;
+	transform: translate(50%,0);
+	right: 50%;
+	margin-top: 150px;
+}
+
+article .Contact{
+	display: flex;
+	float: left;
+	position: absolute;
+	width: 1000px;
+	transform: translate(50%,0);
+	right: 50%;
+	margin-top: 750px;
+	height: 400px;
+}
+
+article .Contact .Title{
+	display: block;
+	position: absolute;
+}
+
+article .Contact .Title h2{
+	color: #2f3542;
+	font-family: "rubik",  sans-serif;
+}
+
+article .Contact .Left{
+	width: 660px;
+	display: block;
+	margin-top: 40px;
+}
+
+article .Content .Left textarea{
+	border: 1px solid lightgray;
+}
+
+article .Contact .Left input{
+	width: 300px;
+	height: 35px;
+	margin-right: 20px;
+	margin-top: 20px;
+	border: 1px solid lightgray;
+}
+
+article .Contact .Left .Subject{
+	width: 630px;
+}
+
+article .Contact .Left .TextArea{
+	width: 650px;
+}
+
+article .Contact .Left textarea::placeholder{
+	font-family: "rubik",  sans-serif;
+	font-size: 10px;
+	color: gray;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+article .Contact .Left input::placeholder{
+	font-family: "rubik",  sans-serif;
+	font-size: 10px;
+	color: gray;
+	padding-left: 10px;
+}
+
+article .Contact .Left .Button{
+	margin-top: 50px;
+}
+
+article .Contact .Left .Button a{
+	text-decoration: none;
+	background: #2f3542;
+	padding: 15px 35px;
+	color: white;
+	font-family: "rubik",  sans-serif;
+	font-size: 14px;
+	border-radius: 2px;
+	transition: 0.3s ease-out;
+}
+
+article .Contact .Left .Button a:hover{
+	background: #c5654c;
+}
+
+article .Contact .Right{
+	width: 200px;
+	position: relative;
+	display: block;
+	margin-top: 40px;
+	margin-left: 150px;
+}
+
+article .Contact .Right .ContactInformation{
+	margin-bottom: 50px;
+	display: block;
+	float: right;
+	position: relative;
+	width: 170px;
+
+}
+
+article .Contact .Right img{
+	width: 25px;
+	height: 40px;
+	float: left;
+	margin-right: 7px;
+	margin-top: 8px;
+}
+
+article .Contact .Right h2{
+	display: flex;
+	font-size: 12px;
+	float: left;
+	margin-top: 10px;
+	font-family: "rubik",  sans-serif;
+	width: 100px;
+	color: #2f3542;
+}
+
+article .Contact .Right p{
+	font-size: 10px;
+	float: left;
+	font-family: "rubik",  sans-serif;
+	width: 100px;
+	color: gray;
+	display: block;
+	margin-top: 2px;
+}
+
+
+footer {
+	background:#303952;
+	width: 100%;
+	height: 600px;
+	float: left;
+	position: relative;
+	display: flex;
+}
+
+footer .Content{
+	float: left;
+	position: absolute;
+	display: flex;
+	transform: translate(50%,0);
+	right: 50%;
+	width: 1250px;
+	height: 600px;
+}
+
+footer .Content .Left {
+	width: 400px;
+	height: 300px;
+	margin-top: 150px;
+	display: block;
+	position: relative;
+}
+
+footer .Content .Left .ContactInfo {
+	display: block;
+	position: relative;
+}
+
+footer .Content .Left  .ContactInfo img{
+	width: 250px;
+	height: 90px;
+}
+
+footer .Content .Left .ContactInfo .Address {
+	width: 200px;
+	margin-top: 20px;
+}
+
+footer .Content .Left .ContactInfo .Address p{
+	color: gray;
+	font-family: "rubik",  sans-serif;
+	font-size: 12px;
+	margin-bottom: 5px;
+	line-height: 20px;
+}
+
+footer .Content .Left .SosMed{
+	position: relative;
+	display: flex;
+	margin-top: 30px;
+}
+
+footer .Content .Left .SosMed img{
+	width: 15px;
+	margin-bottom: 30px;
+	margin-left: 25px;
+	transition: 0.3s ease-out;
+}
+
+footer .Content .Left .SosMed img:hover{
+	filter: invert(100%) sepia(0%) saturate(7490%) hue-rotate(104deg) brightness(95%) contrast(110%);
+}
+
+footer .Content .Center {
+	margin-top: 150px;
+	width: 600px;
+	height: 300px;
+	display: flex;
+}
+
+footer .Content .Center .Company{
+	width: 200px;
+	height: 180px;
+	margin-top: 20px;
+}
+
+footer .Content .Center .Company h1{
+	margin-bottom: 30px;
+	color: gray;
+	font-family: "rubik",  sans-serif;
+	font-size: 25px;
+}
+
+footer .Content .Center .Company .List{
+	display: block;
+}
+
+footer .Content .Center .Company .List a{
+	display: block;
+	width: 0px;
+	text-decoration: none;
+	margin-top: 15px;
+	color: gray;
+	font-family: "rubik",  sans-serif;
+	font-size: 15px;
+}
+
+footer .Content .Center .Company .List a:hover{
+	color: #c5654c;
+	transition: 0.3s ease-out;
+}
+
+footer .Content .Center .PopularDestination{
+	width: 300px;
+	height: 180px;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+footer .Content .Center .PopularDestination h1{
+	margin-bottom: 15px;
+	color: gray;
+	font-family: "rubik",  sans-serif;
+	font-size: 25px;
+}
+
+footer .Content .Center .PopularDestination .List{
+	display: flex;
+}
+
+footer .Content .Center .PopularDestination .List2{
+	margin-left: 150px;
+}
+
+footer .Content .Center .PopularDestination a{
+	display: block;
+	width: 0px;
+	text-decoration: none;
+	margin-top: 15px;
+	color: gray;
+	font-family: "rubik",  sans-serif;
+	font-size: 15px;
+}
+
+footer .Content .Center .PopularDestination a:hover{
+	color: #c5654c;
+	transition: 0.3s ease-out;
+}
+
+footer .Content .Right{
+	margin-top: 150px;
+	width: 300px;
+	height: 300px;
+	display: flex;
+}
+
+footer .Content .Right .Instagram{
+	width: 300px;
+	height: 180px;
+	margin-top: 20px;
+}
+
+footer .Content .Right .Instagram h1{
+	margin-bottom: 15px;
+	color: gray;
+	font-family: "rubik",  sans-serif;
+	font-size: 25px;
+}
+
+footer .Content .Right .Instagram img{
+	height: 50px;
+	width: 55px;
+	margin-right: 5px;
+	border-radius: 3px;
+	margin-bottom: 15px;
+}
+
+footer .Content .Copyright{
+	height: 30px;
+	width: 1250px;
+	position: absolute;
+	text-align: center;
+	margin-top: 500px;
+	border-top: 1px solid gray;
+}
+
+footer .Content .Copyright p{
+	text-decoration: none;
+	display: block;
+	margin-top: 10px;
+	color: gray;
+	font-family: "rubik",  sans-serif;
+	font-size: 10px;
+}
+
+footer .Content .Copyright a{
+	text-align: center;
+	text-decoration: none;
+	position: absolute;
+	margin-top: 10px;
+	color: #c5654c;
+	font-family: "rubik",  sans-serif;
+	font-size: 10px;
+	margin-top: 1px;
+	margin-left: 2px;
+}
+
+
+
+
+/*color : #55454f ungu , #2f3542 abu" item , #ab7f76 coklat susu 
+, #c5654c coral, #ab7f76 abu" muda , #75697d ungu muda*/

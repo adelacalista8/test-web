@@ -1,0 +1,18 @@
+1. di bar where to go box tanggal nya mau di revisi
+2. gmn cara bungkus gambar dan text biar jadi 1 bungkusan biar hover nya dapet semua untuk gambar
+3. text indonesia nya dah beneran tengah ga si
+4. untuk hover panah dah oke kan kalo begitu?
+5. gimana caranya biar option travel type bisa paddingnya gede selain pake gedein font
+6. header belom dibikin posisi absolute 
+7. belum bikin pilihan di search bar nya 
+yang contact apakah harus di connect ke html lainnya kah??
+
+
+
+-------------------------------
+
+1. bagian popular places blm ada shadow
+2. blm bikin animation untuk video
+3. tampilan video setelah di klik blm mirip
+4. bagian foto muka org blm responsif blm ada animation bisa geser
+5. belom bikin sosmed jadi warna nya sama
